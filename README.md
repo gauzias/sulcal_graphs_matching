@@ -11,5 +11,8 @@ The graph matching methods used in this work were implemented using authors impl
 
 ----------------------------------------------------------------------------------------------------------
 
-### Pre-requisite:
+### Dependencies:
+
+#### 1. [SLAM](https://github.com/gauzias/slam)
+#### 2. [VISBRAIN](https://github.com/EtienneCmb/visbrain)
 
