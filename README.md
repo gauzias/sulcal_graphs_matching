@@ -1,6 +1,6 @@
 This repository contains the source code and data corresponding to PLOS 2023 publication:
 
-#### Population-wise Labeling of Sulcal Graphs using Multi-graph Matching.
+## Population-wise Labeling of Sulcal Graphs using Multi-graph Matching.
 
 The graph matching methods used in this work were implemented using authors implementation. We provide the link to their corresponding repositories below:
 
