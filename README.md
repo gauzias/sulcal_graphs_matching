@@ -7,7 +7,9 @@ The graph matching methods used in this work were implemented using authors impl
 
 #### [Multi-image matching via fast alternating minimization](https://arxiv.org/pdf/1505.04845.pdf) ([Code](https://github.com/zju-3dv/multiway))
 #### [Multi-Graph Matching via Affinity Optimization with Graduated Consistency Regularization](https://faculty.cc.gatech.edu/~zha/papers/TPAMI2477832_V2.pdf) ([Code](https://github.com/Thinklab-SJTU/pygmtools))
-#### [Solving the multi-way matching problem by permutation synchronization](https://pages.cs.wisc.edu/~pachauri/perm-sync/assignmentsync.pdf) [Code](https://pages.cs.wisc.edu/~pachauri/perm-sync)
+#### [Solving the multi-way matching problem by permutation synchronization](https://pages.cs.wisc.edu/~pachauri/perm-sync/assignmentsync.pdf) ([Code](https://pages.cs.wisc.edu/~pachauri/perm-sync))
 
 ----------------------------------------------------------------------------------------------------------
+
+### Pre-requisite:
 
