@@ -20,6 +20,6 @@ These dependencies are mandatory for the implementation of scripts provided:
 
 
 ### To generate a population of simulated graph:
-`python script_generation_graphs_with_edges_permutation_updated.py`
+``python script_generation_graphs_with_edges_permutation_updated.py``
 
 
