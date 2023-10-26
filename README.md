@@ -11,16 +11,19 @@ The graph matching methods used in this work were implemented using authors impl
 
 ----------------------------------------------------------------------------------------------------------
 
+#### All permutation matrices, silhouette values and consistency values are precomputed and provided in the folder `Oasis_original_new_with_dummy`
+
 ### Dependencies:
 
 These dependencies are mandatory for the implementation of scripts provided:
 
 #### 1. [SLAM](https://github.com/gauzias/slam)
-#### 2. [VISBRAIN](https://github.com/EtienneCmb/visbrain)
+#### 2. [VISBRAIN](https://github.com/EtienneCmb/visbrain) for visualization.
 
 
-### To generate a population of simulated graph(specify the parameters in script):
+### To generate a population of synthetic sulcal graphs(specify the parameters in script):
 `python script_generation_graphs_with_edges_permutation_updated.py`
 
 
-### 
+### Computation of affinity matrices:
+``
