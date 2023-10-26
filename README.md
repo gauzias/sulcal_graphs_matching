@@ -13,6 +13,13 @@ The graph matching methods used in this work were implemented using authors impl
 
 ### Dependencies:
 
+These dependencies are mandatory for the implementation of scripts provided:
+
 #### 1. [SLAM](https://github.com/gauzias/slam)
 #### 2. [VISBRAIN](https://github.com/EtienneCmb/visbrain)
+
+
+### To generate a population of simulated graph:
+`python script_generation_graphs_with_edges_permutation_updated.py`
+
 
