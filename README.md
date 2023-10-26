@@ -1,7 +1,8 @@
-# sulcal_graphs_matching
-This repository will contain the code and data corresponding to our publication.
+This repository contains the source code and data corresponding to PLOS 2023 publication:
 
-The graph matching methods used in this work were implemented using authors code.
+#### Population-wise Labeling of Sulcal Graphs using Multi-graph Matching.
+
+The graph matching methods used in this work were implemented using authors implementation. We provide the link to their corresponding repositories below:
 
 ##### KerGM-> https://github.com/ZhenZhang19920330/KerGM_Code
 
