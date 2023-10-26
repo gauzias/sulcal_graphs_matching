@@ -347,8 +347,7 @@ def get_in_between_perm_matrix(perm_mat_1, perm_mat_2):
 
 
 
-def generate_graph_family(nb_sample_graphs, nb_graphs, nb_vertices, radius, nb_outliers, ref_graph, noise_node=1, noise_edge=1,
-                          nb_neighbors_to_consider=10):
+def generate_graph_family(nb_sample_graphs, nb_graphs, nb_vertices, radius, nb_outliers, ref_graph, noise_node=1, noise_edge=1):
     """
 	Generate n noisy graphs from a reference graph alongside the 
 	ground truth permutation matrices.
@@ -459,7 +458,7 @@ def generate_graph_family(nb_sample_graphs, nb_graphs, nb_vertices, radius, nb_o
 
 
 def generate_n_graph_family_and_save(path_to_write, nb_runs, nb_ref_graph, nb_sample_graphs,nb_graphs, nb_vertices,
-                                     radius, list_noise, max_outliers, nb_neighbors_to_consider=10, save_reference=0):
+                                     radius, list_noise, save_reference=0):
     ''' Generate n family of graphs for each couple (noise, outliers). The graphs are saved
 		in a folder structure at the point path_to_write
 	'''
@@ -509,11 +508,9 @@ def generate_n_graph_family_and_save(path_to_write, nb_runs, nb_ref_graph, nb_sa
             list_graphs,ground_truth_perm,ground_truth_perm_to_ref  = generate_graph_family(nb_sample_graphs= nb_sample_graphs,nb_graphs=nb_graphs,
                                                                    nb_vertices=nb_vertices,
                                                                    radius=radius,
-                                                                   nb_outliers=max_outliers,
                                                                    ref_graph=reference_graph_max,
                                                                    noise_node=noise,
-                                                                   noise_edge=noise,
-                                                                   nb_neighbors_to_consider=nb_neighbors_to_consider)
+                                                                   noise_edge=noise)
 
 
             for i_family, graph_family in enumerate(list_graphs):
@@ -540,13 +537,14 @@ if __name__ == '__main__':
 
     path_to_write = '/home/rohit/PhD_Work/GM_my_version/Graph_matching/data/simu_graph/Small_set/'
 
+    # Change only the following parameters according to need: nb_graphs, nb_vertices
+
     nb_runs = 1
-    nb_sample_graphs = 10 #  # of graphs to generate before selecting the NN graphs with highest geodesic distance.
-    nb_graphs = 30 #137 # nb of graphs to generate
-    nb_vertices = 88 #88 as per real data mean  #72 based on Kaltenmark, MEDIA, 2020 // 88 based on the avg number of nodes in the real data.
-    
-    max_outliers = 20
-    step_outliers = 10
+    nb_sample_graphs = 10 # of graphs to generate before selecting the NN graphs with highest geodesic distance.
+    nb_graphs = 137 # 137 # nb of graphs to generate
+    nb_vertices = 88 # 88 as per real data mean (OASIS)  #72 based on Kaltenmark, MEDIA, 2020 // 88 based on the avg number of nodes in the real data.
+    #max_outliers = 20
+    #step_outliers = 10
     save_reference = 1
     nb_ref_graph = 10000
     radius = 100
@@ -557,8 +555,6 @@ if __name__ == '__main__':
     #list_noise = np.arange(min_noise, max_noise, step_noise)
     list_noise = np.array([100, 200, 400, 1000])
 
-    nb_neighbors_to_consider_outliers = 0
-
     # call the generation procedure 
     generate_n_graph_family_and_save(path_to_write=path_to_write,
                                      nb_runs=nb_runs,
@@ -568,7 +564,5 @@ if __name__ == '__main__':
                                      nb_vertices=nb_vertices,
                                      radius=radius,
                                      list_noise=list_noise,
-                                     max_outliers=max_outliers,
-                                     nb_neighbors_to_consider=nb_neighbors_to_consider_outliers,
                                      save_reference=save_reference)
 

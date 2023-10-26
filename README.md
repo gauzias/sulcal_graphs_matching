@@ -19,7 +19,8 @@ These dependencies are mandatory for the implementation of scripts provided:
 #### 2. [VISBRAIN](https://github.com/EtienneCmb/visbrain)
 
 
-### To generate a population of simulated graph:
-``python script_generation_graphs_with_edges_permutation_updated.py``
+### To generate a population of simulated graph(specify the parameters in script):
+`python script_generation_graphs_with_edges_permutation_updated.py`
 
 
+### 
