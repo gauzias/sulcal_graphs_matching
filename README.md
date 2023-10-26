@@ -4,7 +4,7 @@ This repository contains the source code and data corresponding to PLOS 2023 pub
 
 The graph matching methods used in this work were implemented using authors implementation. We provide the link to their corresponding repositories below:
 
-##### KerGM-> https://github.com/ZhenZhang19920330/KerGM_Code
+##### KerGM[https://github.com/ZhenZhang19920330/KerGM_Code]
 
 ##### mALS-> https://github.com/zju-3dv/multiway
 
