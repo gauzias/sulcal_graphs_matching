@@ -27,3 +27,9 @@ These dependencies are mandatory for the implementation of scripts provided, ple
 
 ### Computation of affinity matrices:
 `python script_generation_affinity_and_incidence_matrix.py`
+
+### Visualize labelings from graph matching methods:
+`python process_real_data/08_script_visu_labelling_template.py`
+
+### Visualize silhouettes from graph matching methods:
+`python process_real_data/12_script_visu_silouhette.py`
