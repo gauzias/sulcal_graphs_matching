@@ -15,7 +15,7 @@ The graph matching methods used in this work were implemented using authors impl
 
 ### Dependencies:
 
-These dependencies are mandatory for the implementation of scripts provided:
+These dependencies are mandatory for the implementation of scripts provided, please follow the instructions properly provided in the following dependencies:
 
 #### 1. [SLAM](https://github.com/gauzias/slam)
 #### 2. [VISBRAIN](https://github.com/EtienneCmb/visbrain) for visualization.
